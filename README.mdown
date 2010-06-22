@@ -1,0 +1,27 @@
+myspace-php-sdk
+===============
+This document outlines how to get started using the MySpace PHP SDK.  The SDK is meant to support OffSite and OnSite applications that wish to make applications via PHP 5.3 or greater. The SDK will enable your application to login MySpace users and access their approved data.  You will have access to all the REST V1, OpenSocial 0.9, and OpenSearch APIs currently supported on the MySpace Developer Platform.
+
+using the php sdk
+-----------------
+1. Enter the consumer key and consumer secret in config/config.MySpace.php file.
+2. Enter the appropriate call back in index.php for direct oauth. 
+	$ms->getRequestToken("http://localhost/myspace/samples/myspaceid-oauth/index.php?f=callback");
+3. Go to Sample App
+	http://yourserver.com/myspace/index.php
+
+running the unit tests
+----------------------
+1. Enter the OAuth Token, OAuth Secret, AppId, FriendId in trunk/config/config.MySpace.php file
+2. Go to this URL
+	http://yourserver.com/myspace/test/index.php
+
+misc. php settings
+------------------
+1. Enable the CURL Extension
+2. Enable the mbString Extension
+3. Use set_time_limit(300) for large video uploads
+4. Maximum allowed size for uploaded files. (php.ini)
+	upload_max_filesize = 50M
+5. Maximum size of POST data that PHP will accept. (php.ini)
+	post_max_size = 50M
