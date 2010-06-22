@@ -12,7 +12,7 @@ using the php sdk
 
 running the unit tests
 ----------------------
-1. Enter the OAuth Token, OAuth Secret, AppId, FriendId in trunk/config/config.MySpace.php file
+1. Enter the OAuth Token, OAuth Secret, AppId, FriendId in config/config.MySpace.php file
 2. Go to this URL
 	> http://yourserver.com/myspace/test/index.php
 
