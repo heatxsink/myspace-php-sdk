@@ -367,19 +367,19 @@ class MySpace {
   * @param string $userId
   * @return ProfileBasic
   */
-  public function getProfileBasic( $userId ){ getProfile($userId, 'basic'); }
+  public function getProfileBasic( $userId ){ $this->getProfile($userId, 'basic'); }
   /**
   * gets a full user profile given the userid
   * @param string $userId
   * @return ProfileFull
   */
-  public function getProfileFull( $userId ){ getProfile($userId, 'full'); }
+  public function getProfileFull( $userId ){ $this->getProfile($userId, 'full'); }
   /**
   * gets an extended user profile given a userid
   * @param string $userId
   * @return ProfileExtended
   */
-  public function getProfileExtended( $userId ){ getProfile($userId, 'extended'); }
+  public function getProfileExtended( $userId ){ $this->getProfile($userId, 'extended'); }
 
   /**
    * gets a user's status
