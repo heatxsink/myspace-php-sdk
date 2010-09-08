@@ -257,7 +257,7 @@ class MySpace {
   	//set the params
   	$params = array(
   				'page' => (empty($page) ? 1 : $page), //if $page is null or empty, use the default, else use $page
-  				'pageSize' => (empty($pageSize) ? 20 : $pageSize),
+  				'page_size' => (empty($pageSize) ? 20 : $pageSize),
   				'list' => $list,
   				'show' => $show
   				);
