@@ -138,7 +138,7 @@ class OAuthRequest {
 	  $body=NULL){
 	 */
 	 
-  function __construct($http_method, $http_url, $parameters=NULL, $headers=array(), $body) {
+  function __construct($http_method, $http_url, $parameters=NULL, $headers=array(), $body = null) {
     
 	@$parameters or $parameters = array();
 	
